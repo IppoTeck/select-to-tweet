@@ -1,0 +1,25 @@
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: #000;
+    border-radius: 4px;
+    padding: 3px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.tooltip img {
+    width: 24px;
+    height: 24px;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent; /* Inverted the direction */
+}
