@@ -24,7 +24,7 @@
 	}
 
 	public function enqueue_scripts() {
-		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'JS/main.js', array('jquery'), $this->version, true);
+		wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'src/JS/main.js', array('jquery'), $this->version, true);
 	}
 
 }
